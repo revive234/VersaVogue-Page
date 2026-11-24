@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="IMAGGarment+: Efficient Attribute-Wise Diffusion for Garment Generation, AAAI 2026.">
+  <meta property="og:title" content="IMAGGarment+: Efficient Attribute-Wise Diffusion for Garment Generation">
+  <meta property="og:description" content="An efficient attribute-wise diffusion framework for garment generation.">
+  <meta name="twitter:title" content="IMAGGarment+: Efficient Attribute-Wise Diffusion for Garment Generation">
+  <meta name="twitter:description" content="An efficient attribute-wise diffusion framework for garment generation.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>IMAGGarment+ | AAAI 2026</title>
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <style>
+  body { font-family: 'Google Sans', 'Noto Sans', sans-serif; }
+  .publication-title { font-family: 'Google Sans', 'Noto Sans', sans-serif; }
+  .publication-authors { line-height: 1.6; }
+  .author-block { display: block; }
+  .author-list .author-block { display: inline-block; margin: 0 0.25rem; white-space: nowrap; }
+  .affiliation-list .author-block { display: inline-block; margin: 0 0.4rem; white-space: nowrap; }
+  .affiliation-list .author-note { display: block; }
+  .publication-links { margin-top: 1.5rem; }
+  .link-block { margin: 0 0.2rem; }
+  .image-placeholder { min-height: 240px; border: 2px dashed #b7c3ce; border-radius: 8px; background: #f5f7f9; color: #667783; display: flex; align-items: center; justify-content: center; text-align: center; padding: 1.5rem; }
+  .method { padding: 3rem 1.5rem; }
+</style>
+
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-size-2 publication-title">
+              IMAGGarment+: Efficient Attribute-Wise Diffusion for Garment Generation
+            </h1>
+
+<!--            <div class="is-size-5 publication-authors">-->
+<!--              &lt;!&ndash; Paper authors &ndash;&gt;-->
+<!--			        <span class="author-block">-->
+<!--                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Anonymous Author</a>-->
+<!--                  </div>-->
+
+					
+<div class="is-size-5 publication-authors author-list">
+  <span class="author-block"><a href="https://scholar.google.com/citations?user=h3tXn1oAAAAJ" target="_blank">Jian Yu</a> <sup>1*</sup></span>
+  <span class="author-block"><a href="https://scholar.google.com/citations?user=wqvr28MAAAAJ" target="_blank">Fei Shen</a> <sup>2*</sup></span>
+  <span class="author-block"><a href="https://scholar.google.com/citations?user=h7EIOCUAAAAJ" target="_blank">Cong Wang</a> <sup>3</sup></span>
+  <span class="author-block"><a href="https://scholar.google.com/citations?user=a3FI8c4AAAAJ&hl=zh-CN" target="_blank">Yanpeng Sun</a> <sup>2</sup></span>
+  <span class="author-block"><a href="https://scholar.google.com/citations?user=DZXShkoAAAAJ" target="_blank">Hao Tang</a> <sup>4</sup></span>
+  <span class="author-block"><a href="https://scholar.google.com/citations?user=HMn_64gAAAAJ" target="_blank">Qin Guo</a> <sup>5</sup></span>
+  <span class="author-block"><a href="https://scholar.google.com/citations?user=vs_MX8kAAAAJ" target="_blank">Xiaoyu Du</a> <sup>1†</sup></span>
+</div>
+<div class="is-size-5 publication-authors affiliation-list">
+  <span class="author-block"><sup>1</sup> Nanjing University of Science and Technology</span>
+  <span class="author-block"><sup>2</sup> National University of Singapore</span>
+  <span class="author-block"><sup>3</sup> Nanjing University</span>
+  <span class="author-block"><sup>4</sup> The Hong Kong Polytechnic University</span>
+  <span class="author-block"><sup>5</sup> The Hong Kong University of Science and Technology</span>
+  <span class="author-block author-note">* Equal contribution · † Corresponding author</span>
+</div>
+
+
+
+
+            <div class="publication-links">
+              <!-- Arxiv PDF link -->
+              <span class="link-block">
+                <a href="https://ojs.aaai.org/index.php/AAAI/article/download/38203/42165" target="_blank"
+                class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="fas fa-file-pdf"></i>
+                </span>
+                <span>Paper</span>
+              </a>
+            </span>
+
+
+                    <!-- Supplementary PDF link -->
+			
+              <span class="link-block">
+                <a href="https://github.com/revive234/IMAGGarment-Plus" target="_blank"
+                class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+                <span>Code</span>
+              </a>
+            </span>
+
+              <!-- <span class="link-block">
+                <a href="https://revive234.github.io/imaggarment.github.io/" target="_blank"
+                class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="fa fa-smile"></i>
+                </span>
+                <span>Demo (Comming Soon)</span>
+              </a>
+            </span> -->
+
+              <!-- Github link -->
+
+
+              <!-- ArXiv abstract Link -->
+              <!--
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="ai ai-arxiv"></i>
+                </span>
+                <span>arXiv</span>
+              </a>
+            </span>
+              -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+
+
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+
+          <div class="content has-text-justified">
+            <p>Diffusion models have advanced fine-grained garment generation, yet balancing controllability, efficiency, and texture fidelity remains challenging. Adapter-based methods often yield incoherent details, while full fine-tuning is computationally expensive and prone to overwriting pretrained priors.
+To address these limitations, we propose IMAGGarment+, an efficient diffusion framework for controllable and high-quality garment synthesis. It comprises two key modules designed for efficient and attribute-aware conditioning.
+First, we introduce an attribute-wise feature extractor (AFE) that disentangles key garment attributes, silhouette, logo, position, and color, into parallel latent streams. Each stream is optimized independently via LoRA, ensuring minimal parameter overhead while retaining expressive capacity.
+Second, we develop an attribute-adaptive attention (AA) module to inject attribute-specific cues into the generative process through a selective, layer-wise injection strategy. Specifically, silhouette and color features are injected into early decoder layers to guide structural and appearance formation, while logo features are propagated across all layers to ensure cross-scale consistency.
+Extensive experiments on fine-grained garment benchmarks demonstrate that IMAGGarment+ outperforms state-of-the-art baselines with less than 20% additional parameters, validating its effectiveness and efficiency.</p>
+          </div>
+        </div>
+      </div>
+      <!--/ Abstract. -->
+    </div>
+  </section>
+  
+ 
+    <section class="section">
+        <div class="container is-max-desktop">
+            
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Preliminary Experiment</h2>
+                    
+                    <div class="container is-max-desktop">
+                        <img src="./static/images/IPA_guess.jpg" alt="IMAGGarment+ IPA_guess" style="width: 100%;">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+	
+   
+
+  <section class="method">
+    <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <h2 class="title is-3">Method</h2>
+                <div class="container is-max-desktop">
+                    <img src="./static/images/framework.jpg" alt="IMAGGarment+ framework" style="width: 100%;">
+                </div>
+                <div class="content has-text-justified">
+                <p>To ensure faithful attribute control and high-fidelity synthesis, our framework consists of two key components: the attribute-wise feature extractor (AFE) and the attribute-adaptive attention (AA) module. The AFE module disentangles multiple visual attributes and encodes them into parallel latent streams. These streams are adapted using LoRA to maintain fine-grained expressiveness with minimal parameter overhead. The resulting features are injected into the Denoising UNet through the AA module, which aligns attribute semantics with decoder layers via a selective injection mechanism. Specifically, features corresponding to silhouette and color are injected into early decoder layers to guide structural layout and chromatic distribution, while logo features are propagated across all layers to preserve fine-grained consistency. This design forms the basis of our layer-wise injection strategy, which ensures effective cross-attribute coordination while preserving computational efficiency.</p>
+                </div>
+                
+        </div>
+            </div>
+        </div>
+</section>
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Results</h2>
+
+          <div class="container is-max-desktop">
+            <img src="./static/images/comparsion.jpg" alt="IMAGGarment+ comparison" style="width: 100%;">
+          </div>
+
+          <br>
+
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+      
+    <section class="section">
+        <div class="container is-max-desktop">
+  
+  
+  
+                <h3 class="title is-4">Citation Information</h3>
+                <pre><code>@inproceedings{yu2026imaggarment+,
+  title={IMAGGarment+: Efficient Attribute-Wise Diffusion for Garment Generation},
+  author={Yu, Jian and Shen, Fei and Wang, Cong and Sun, Yanpeng and Tang, Hao and Guo, Qin and Du, Xiaoyu},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={40},
+  number={14},
+  pages={12135--12143},
+  year={2026}
+}</code></pre>
+            </div>
+        </div>
+    </section>
+  
+
+
+
+
+
+
+ <footer class="footer">
+ <div class="container">
+   <div class="columns is-centered">
+    <div class="column is-8">
+       <div class="content">
+
+     <p>
+      This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+      You are free to borrow this website's template; please link back to this page in the footer. <br> This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+      Commons Attribution-ShareAlike 4.0 International License</a>.
+     </p>
+
+       </div>
+     </div>
+   </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
